@@ -1,4 +1,5 @@
-# Mathias’s dotfiles
+# rrankin’s dotfiles
+## Inspired by mathiasbynens
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
 
