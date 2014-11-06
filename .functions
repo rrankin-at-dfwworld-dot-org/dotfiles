@@ -18,7 +18,7 @@ function calc() {
 
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$@";
+	mkdir -p "$_" && cd "$_";
 }
 
 # Change working directory to the top-most Finder window location
@@ -122,8 +122,8 @@ function gz() {
 }
 
 # Syntax-highlight JSON strings or files
-# Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-function json() {
+# Usage: `json_higlighter '{"foo":42}'` or `echo '{"foo":42}' | json_higlighter`
+function json_highlighter() {
 	if [ -t 0 ]; then # argument
 		python -mjson.tool <<< "$*" | pygmentize -l javascript;
 	else # pipe
